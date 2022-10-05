@@ -1,6 +1,6 @@
 # OOP_LAB_2
 
-In this aboratory work I had to deal with soemthing new for me at it is Encapsulation
+In this laboratory work I had to deal with soemthing new for me at it is Encapsulation
 
 I used this term to create a bank simulator.
 
