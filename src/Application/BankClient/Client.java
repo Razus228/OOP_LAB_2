@@ -3,7 +3,14 @@ package Application.BankClient;
 import Application.BankEmployees.Employees;
 
 public class Client extends Employees {
+    public void Actions() {
 
+        System.out.println("Take money, Use money, Check money");
+    }
+    public void Change(){
+
+        System.out.println("Exchange rate, exchange money");
+    }
     public static int clientCount = 0;
     private String name;
     private String idnp;

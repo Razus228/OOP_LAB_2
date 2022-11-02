@@ -20,6 +20,7 @@ public class Main {
         office.setBankName("MAIB");
         System.out.println("Bank adress: "+office.getAdress());
         System.out.println("Bank adress: "+office.getBankName());
+        office.WalkinBank();
 
         System.out.println("\n");
 
@@ -30,6 +31,7 @@ public class Main {
         System.out.println("Employer Id: "+employer.getEmployerId());
         System.out.println("Employer Name: "+employer.getName());
         System.out.println("Employer Age: "+employer.getAge());
+        employer.WalkinBank();
 
         System.out.println("\n");
 
@@ -44,6 +46,7 @@ public class Main {
         System.out.println("Employee Idnp: "+employee.getIdnp());
         System.out.println("Employee Gen: "+employee.getGender());
         System.out.println("Employee Age: "+employee.getAge());
+        employee.WalkinBank();
 
         System.out.println("\n");
 
@@ -58,6 +61,8 @@ public class Main {
         System.out.println("Employee Age: "+client.getAge());
         System.out.println("Employee Adress: "+client.getAdress());
         System.out.println("Employee Gender: "+client.getGender());
+        client.WalkinBank();
+        client.Actions();
 
         System.out.println("\n");
 
@@ -68,6 +73,7 @@ public class Main {
         System.out.println("Card Id: "+card.getCardId());
         System.out.println("Card Pin: "+card.getPinCode());
         System.out.println("Card Amount: "+card.getAmount());
+        card.Actions();
 
         System.out.println("\n");
 
@@ -76,6 +82,7 @@ public class Main {
         exchange.setExchangeRateEuro(18);
         System.out.println("Euro: "+exchange.getExchangeRateEuro());
         System.out.println("Dollar: "+exchange.getExchangeRateDollar());
+        exchange.Change();
 
         System.out.println("\n");
 
@@ -84,6 +91,7 @@ public class Main {
         deposit.setDepositAmount(1234651);
         System.out.println("Deposit Id: "+deposit.getDepositId());
         System.out.println("Deposit Amount: "+deposit.getDepositAmount());
+        deposit.Actions();
 
         System.out.println("\n");
 
@@ -94,6 +102,7 @@ public class Main {
         System.out.println("Loan Id: "+ loan.getLoanId());
         System.out.println("Loan Amount: "+ loan.getLoanAmount());
         System.out.println("Loan Rate: "+ loan.getRate());
+        loan.Actions();
 
         System.out.println("\n");
 
@@ -104,6 +113,7 @@ public class Main {
         System.out.println("Atm CardId: "+atm.getCardId());
         System.out.println("Atm Amount: "+atm.getAmount());
         System.out.println("Atm Adress: "+atm.getAtmAdress());
+        atm.Actions();
 
         System.out.println("\n");
 
@@ -112,7 +122,7 @@ public class Main {
         transaction.setAmount(21000);
         System.out.println("Transaction Id: "+ transaction.getTransactionId());
         System.out.println("Transaction Amount: "+ transaction.getAmount());
-
+        transaction.Actions();
 
     }
 }
